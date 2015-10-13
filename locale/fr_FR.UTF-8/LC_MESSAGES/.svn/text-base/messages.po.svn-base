@@ -1,0 +1,332 @@
+msgid "Development:"
+msgstr "Développement"
+
+msgid "Your engine is not currently supported"
+msgstr "Votre machine n'est pas supportée actuellement"
+
+msgid "Select a poller"
+msgstr "Selectionner un Poller"
+
+msgid "Check latency"
+msgstr "Latence relevé"
+
+msgid "Acknowledge Services"
+msgstr "Acquitter les services"
+
+msgid "Delete Ack"
+msgstr "Supprimer Ack"
+
+msgid "Author"
+msgstr "Auteur"
+
+msgid "Comment"
+msgstr "Commentaire"
+
+msgid "Confirm"
+msgstr "Confirmer"
+
+msgid "Cancel"
+msgstr "Annuler"
+
+msgid "Add a Downtime"
+msgstr "Ajouter un Temps d'arrêt"
+
+msgid "Downtime"
+msgstr "Temps d'arrêt"
+
+msgid "Start"
+msgstr "Début"
+
+msgid "End"
+msgstr "Fin"
+
+msgid "Duration"
+msgstr "Durée"
+
+msgid "Fixed"
+msgstr "Fixe"
+
+msgid "Downtime Host's Services"
+msgstr "Ajouter temps d'arrêt au services de l'hôte"
+
+msgid "Host Status"
+msgstr "Statut de l'Hôte"
+
+msgid "Active notifications?"
+msgstr "Notifications actives?"
+
+msgid "Start Date"
+msgstr "Date de début"
+
+msgid "End Date"
+msgstr "Date de fin"
+
+msgid "Ongowing"
+msgstr "En Cours"
+
+msgid "Delete"
+msgstr "Supprimer"
+
+msgid "Downtime Ongowing"
+msgstr "Temps d'ârret en cours"
+
+msgid "Acknowledged"
+msgstr "Acquittement"
+
+msgid "Close"
+msgstr "Fermer"
+
+msgid "1 day"
+msgstr "1 jour"
+
+msgid "31 days"
+msgstr "31 jours"
+
+msgid "365 days"
+msgstr "365 jours"
+
+msgid "Next check"
+msgstr "Prochaine Verification"
+
+msgid "Active checks"
+msgstr "Verifications Actives"
+
+msgid "Passive checks"
+msgstr "Verifications Passives"
+
+msgid "Delete Downtime"
+msgstr "Supprimer Temps d'arrêt"
+
+msgid "Centreon mobile UI"
+msgstr "Centreon mobile UI"
+
+msgid "Hosts"
+msgstr "H&ocirc;tes"
+
+msgid "Services"
+msgstr "Services"
+
+msgid "Up"
+msgstr "Up"
+
+msgid "Down"
+msgstr "Down"
+
+msgid "Unreachable"
+msgstr "Injoignables"
+
+msgid "Pending"
+msgstr "En attente"
+
+msgid "Ok"
+msgstr "Ok"
+
+msgid "Warning"
+msgstr "Alerte"
+
+msgid "Critical"
+msgstr "Critique"
+
+msgid "Unknown"
+msgstr "Inconnu"
+
+msgid "Poller statistics"
+msgstr "Statistiques du poller"
+
+msgid "Desktop version"
+msgstr "Version desktop"
+
+msgid "Home"
+msgstr "Home"
+
+msgid "All hosts"
+msgstr "Tous les h&ocirc;tes"
+
+msgid "Hosts with errors"
+msgstr "h&ocirc;tes en erreur"
+
+msgid "Search results"
+msgstr "R&eacute;sulats de la recherche"
+
+msgid "Pge N&deg;:"
+msgstr "Pge N&deg;:"
+
+msgid "Results/page:"
+msgstr "R&eacute;sultats/page:"
+
+msgid "Back"
+msgstr "Back"
+
+msgid "details"
+msgstr "D&eacute;tails"
+
+msgid "Acknowledge this problem"
+msgstr "Acquitter ce probl&egrave;me"
+
+msgid "Delete acknowledgement"
+msgstr "Supprimer cet acquit"
+
+msgid "Acknowledge"
+msgstr "Acquitter"
+
+msgid "Notify"
+msgstr "Notifier"
+
+msgid "Sticky"
+msgstr "&Eacute;pingl&eacute;"
+
+msgid "Persistent"
+msgstr "Persistant"
+
+msgid "Host detailed status"
+msgstr "Statut d&eacute;taill&eacute; de l'h&ocirc;te"
+
+msgid "Name: "
+msgstr "Nom: "
+
+msgid "Alias: "
+msgstr "Alias: "
+
+msgid "Host status: "
+msgstr "Statut de l'h&ocirc;te: "
+
+msgid "Attempt:"
+msgstr "Tentative:"
+
+msgid "Last check:"
+msgstr "Dernier controle:"
+
+msgid "Next check:"
+msgstr "Prochain controle:"
+
+msgid "Latency:"
+msgstr "Latence:"
+
+msgid "Execution time"
+msgstr "Temps d'ex&eacute;cution:"
+
+msgid "Last change"
+msgstr "Dernier changement:"
+
+msgid "Notifications enabled?"
+msgstr "Notifications activ&eacute;es?"
+
+msgid "Yes"
+msgstr "Oui"
+
+msgid "No"
+msgstr "Non"
+
+msgid "Actives checks"
+msgstr "Contr&ocirc;les actifs?"
+
+msgid "Passives checks"
+msgstr "Contr&ocirc;les passifs?"
+
+msgid "Detailed status"
+msgstr "Statut d&eacute;taill&eacute;:"
+
+msgid "All services"
+msgstr "Tous les services"
+
+msgid "Services error"
+msgstr "Services en erreur"
+
+msgid "Host is: "
+msgstr "H&ocirc;te concern&eacute;: "
+
+msgid "Service status"
+msgstr "Statut du service"
+
+msgid "Options"
+msgstr "Options"
+
+msgid "General options"
+msgstr "Options g&eacute;n&eacute;rales"
+
+msgid "Theme"
+msgstr "Th&egrave;me"
+
+msgid "Show hosts and services icons"
+msgstr "Afficher les icones des hotes et services"
+
+msgid "Icons size (in pixels)"
+msgstr "Taille des icones (en pixel)"
+
+msgid "Show modules:"
+msgstr "Affichage des modules:"
+
+msgid "Weathermap options:"
+msgstr "Options weathermap:"
+
+msgid "Mobile maps suffix"
+msgstr "Suffixe des cartes mobiles"
+
+msgid "Show only maps whose name ends with suffix"
+msgstr "N'afficher que les cartes dont le nom finit par le suffixe"
+
+msgid "Save"
+msgstr "Enregistrer"
+
+msgid "Your settings have been saved"
+msgstr "Vos pr&eacute;f&eacute;rences ont &eacute;t&eacute; enregistr&eacute;es"
+
+msgid "About"
+msgstr "Infos"
+
+msgid "<a href=http://www.centreon.com>Centreon</a> module for mobile devices."
+msgstr "Module <a href=http://www.centreon.com>Centreon</a> pour p&eacute;riph&eacute;riques mobiles."
+
+msgid "Development"
+msgstr "D&eacute;veloppement:"
+
+msgid "This module is under GPL licence and uses <a href=http://jquerymobile.com>Jquery Mobile</a> framework."
+msgstr "Ce module est sous licence GPL et utilise le framework <a href=http://jquerymobile.com>Jquery Mobile</a>."
+
+msgid "Service detailed status"
+msgstr "Statut d&eacute;taill&eacute; de l'h&ocirc;te"
+
+msgid "Statistics"
+msgstr "Statistiques"
+
+msgid "Actively checked"
+msgstr "Actuellement contr&ocirc;l&eacute;s:"
+
+msgid "Time frame"
+msgstr "P&eacute;riode"
+
+msgid "Hosts checked"
+msgstr "H&ocirc;tes contr&ocirc;l&eacute;s"
+
+msgid "Services checked"
+msgstr "Services contr&ocirc;l&eacute;s"
+
+msgid "Check lantecy"
+msgstr "Temps de latence des contr&ocirc;les:"
+
+msgid "Minimum"
+msgstr "Minimum"
+
+msgid "Maximum"
+msgstr "Maximum"
+
+msgid "Average"
+msgstr "Moyenne"
+
+msgid "Checks execution time"
+msgstr "Temps d'ex&eacute;cution des contr&ocirc;les:"
+
+msgid "Buffer usage"
+msgstr "Utilisation du buffer"
+
+msgid "In use"
+msgstr "Utilis&eacute;s"
+
+msgid "Max used"
+msgstr "Maximum utilis&eacute;"
+
+msgid "Total available"
+msgstr "Total disponible"
+
+msgid "Your Broker is not currently supported"
+msgstr "Votre Broker n'est pas encore pris en charge"

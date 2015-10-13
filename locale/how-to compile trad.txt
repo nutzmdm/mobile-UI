@@ -1,0 +1,1 @@
+msgfmt -o /PLUGIN_DIRECTORY/locale/fr_FR.UTF-8/LC_MESSAGES/messages.mo /PLUGIN_DIRECTORY/locale/fr_FR.UTF-8/LC_MESSAGES/messages.po

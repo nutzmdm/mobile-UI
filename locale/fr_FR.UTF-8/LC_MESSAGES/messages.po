@@ -1,0 +1,22 @@
+#: centreon/www/modules/mobile-UI/include/monitoring/hosts/monitoringHostMainHTML.php:73
+msgid "(filtered results)"
+msgstr "(r&eacute;sulats filtr&eacute;s)"
+
+msgid "Save"
+msgstr "Enregistrer"
+
+msgid "Your settings have been saved"
+msgstr "Vos pr&eacute;f&eacute;rences ont &eacute;t&eacute; enregistr&eacute;es"
+
+msgid "About"
+msgstr "Infos"
+
+msgid "<a href=http://www.centreon.com>Centreon</a> module for mobile devices."
+msgstr "Module <a href=http://www.centreon.com>Centreon</a> pour p&eacute;riph&eacute;riques mobiles."
+
+msgid "Development"
+msgstr "D&eacute;veloppement:"
+
+msgid "This module is under GPL licence and uses <a href=http://jquerymobile.com>Jquery Mobile</a> framework."
+msgstr "Ce module est sous licence GPL et utilise le framework <a href=http://jquerymobile.com>Jquery Mobile</a>."
+

@@ -1,0 +1,120 @@
+/************************************************************
+*	PROPRIETES ET CLASSES COMMUNES A PLUSIEURS PAGES		*
+*************************************************************/
+table {font-size:8pt;}
+td {white-space: normal; word-wrap: break-word;}
+div {white-space: normal; word-wrap: break-word;}
+
+#titre {text-decoration:underline;}
+iframe {border: none;}
+
+.tblPath img {margin: 0px 0px 0px 0px; vertical-align:top; padding-top:2px;}
+.pathItem {padding-left:2px; padding-right:2px;}
+
+
+.loader{display: block; margin-left: auto; margin-right: auto;}
+.tbl_100 {width:100%;}
+.tbl_spacer {height:3px; border:none;}
+.borderTop {border-top:1px solid #A0A0A0;}
+.borderRight {border-right:1px solid #A0A0A0;}
+.borderBottom {border-bottom:1px solid #A0A0A0;}
+.borderLeft {border-left:1px solid #A0A0A0;}
+.borderLeft2 {border-left:2px solid #A0A0A0;}
+.borderTop2 {border-top:2px solid #A0A0A0;}
+.borderRight2 {border-right:2px solid #A0A0A0;}
+.borderBottom2 {border-bottom:2px solid #A0A0A0;}
+.tbl_Border2{border: 2px solid #A0A0A0;}
+	.trTitre {font-weight: bold; text-align: center; border: 2px solid #A0A0A0;}
+	.trImpair {background-color: #F2F2F2;}
+	.trPair {background-color: #D3D3D3;}
+		.tdCenter{text-align:center;}
+
+.div-align-center {text-align:center;}
+.div-align-left {text-align:left;}
+.div-align-right {text-align:right;}
+
+.tbl-align-center {text-align:center;}
+.tbl-align-left {text-align:left;}
+.tbl-align-right {text-align:right;}
+
+.span-align-left {text-align:left;}
+.span-align-right {text-align:right;}
+.span-align-center {text-align:center;}
+
+.content_small {font-size:8pt;}
+.content_med {font-size:12pt;}
+.content_big {font-size:15pt;}
+.content_small_bold {font-size:8pt; font-weight:bold;}
+.content_med_bold {font-size:12pt; font-weight:bold;}
+.content_big_bold {font-size:15pt; font-weight:bold;}
+
+.ui-btn.my-tooltip-btn, .ui-btn.my-tooltip-btn:hover, .ui-btn.my-tooltip-btn:active {background: none; border: 0;}
+#custom-border-radius .ui-btn-icon-notext.ui-corner-all {-webkit-border-radius: .3125em; border-radius: .3125em;}
+
+.div_popup{margin:3px 3px 3px 3px; padding:3px 3px 3px 3px;}
+
+/********************************************
+*	index.php 								*
+*********************************************/
+#resumeCollectorStateDiv {padding:2px 2px 2px 2px; text-align:center;}
+#resumeCollectorStateTable {border:1px solid #A0A0A0; width:100%;}
+#collectorStateHeader, #resumeCollectorState1img, #resumeCollectorState2img, #resumeCollectorState3img, #resumeCollectorState1text, #resumeCollectorState2text, #resumeCollectorState3text
+	{
+	padding:4px 4px 4px 4px;
+	border:1px solid #A0A0A0;
+	}
+#resumeHostStateDiv {padding:2px 2px 2px 2px; text-align:center;}
+#resumeHostStateTable {border:no; width:100%; border-collapse:separate;}
+
+#resumeServiceStateTd_title {padding: 3px 0px 3px 0px;}
+
+.resumeStateTdContentValueGreen {margin:0; padding:0px 0px 0px 0px; border:3px solid #C3EFB3; width:20%;border-collapse:separate; background-color:white;}
+.resumeStateTdContentValueRed {margin:0; padding:0px 0px 0px 0px; border:3px solid #F2DEDF; width:20%;border-collapse:separate; background-color:white;}
+.resumeStateTdContentValueLightBlue {margin:0; padding:0px 0px 0px 0px; border:3px solid #B6EDF6; width:20%;border-collapse:separate; background-color:white;}
+.resumeStateTdContentValueBlue {margin:0; padding:0px 0px 0px 0px; border:3px solid #A3C9D8; width:20%;border-collapse:separate; background-color:white;}
+.resumeStateTdContentValueOrange {margin:0; padding:0px 0px 0px 0px; border:3px solid #FFE187; width:20%;border-collapse:separate; background-color:white;}
+.resumeStateTdContentValueGrey {margin:0; padding:0px 0px 0px 0px; border:3px solid #CBCBD8; width:20%;border-collapse:separate; background-color:white;}
+
+
+#chart1 {margin: 0 auto; text-align:center; height:170px; width:170px;}
+#chart2 {margin: 0 auto; text-align:center; height:170px; width:170px;}
+
+/********************************************
+*	monitoringHost.php 						*
+*********************************************/
+.td1-host-status {width:90%; white-space: nowrap;}
+.td2-host-status {width:10%; text-align:right; white-space: nowrap;}
+
+
+	/********************************************
+	*	monitoringHost.php - Details			*
+	*********************************************/
+	.tableDetails {border: 2px solid #A0A0A0; border-collapse: collapse;}
+	.tdDetails {border: 1px solid #A0A0A0; padding: 1px 5px 1px 1px;}
+	.tdCommands {border: 1px solid #A0A0A0; padding: 2px 0px 2px 2px;}
+	.tabContent {display:none;}
+	
+
+/********************************************
+*	monitoringService.php 					*
+*********************************************/
+.tdHostname_Service {width:1px; white-space: nowrap;}
+.tdHostStateImg_Service {width:99%; text-align:right; white-space: nowrap;}
+.tdServicename {padding-left:30px; width:1px; white-space: nowrap;}
+.tdServiceStateImg {width:99%; text-align:right; white-space: nowrap;}
+
+	/********************************************
+	*	monitoringService.php 					*
+	*********************************************/
+	.tdGraph img {text-align:center; width:100%; position:relative;}
+
+/********************************************
+*	commentHost.php.php 					*
+*********************************************/
+/*.tdFormCommentHeader, .tdFormCommentNameHost, .tdFormCommentNameHostSelect*/
+.tdCommentPadding {padding: 2px 2px 2px 2px;}
+
+/********************************************
+*	options.php 							*
+*********************************************/
+.tdFlip {padding-right:15px;}
