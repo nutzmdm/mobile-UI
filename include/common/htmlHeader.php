@@ -10,11 +10,12 @@
 
 <!--Import CSS & Javascript-->
 
-	<link href="./modules/mobile-UI/css/jquery.mobile-1.4.4.min.css" rel="stylesheet" type="text/css" />
+	<link href="./modules/mobile-UI/css/default/jquery.mobile-1.4.4.min.css" rel="stylesheet" type="text/css" />
+	<!--<link href="./modules/mobile-UI/css/ios/styles.css" rel="stylesheet" type="text/css" />-->
+	<!--<link href="./modules/mobile-UI/css/material/css/nativedroid2.css" rel="stylesheet" type="text/css" />-->
 	<script src="./modules/mobile-UI/include/js/jquery-1.9.1.min.js"></script>
 	<script src="./modules/mobile-UI/include/js/mobile-UI.js"></script>
 	<script src="./modules/mobile-UI/include/js/jquery.mobile-1.4.4.min.js"></script>
 	<link href="./modules/mobile-UI/css/style-mobile.css" rel="stylesheet" type="text/css"/>
-	
-</head>
 
+</head>

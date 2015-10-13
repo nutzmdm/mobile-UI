@@ -83,20 +83,19 @@ $(document).on('pageinit', function() {
 		//Getting page elements	-->
 		var i = 0;
 		for (i=0; i < $('.ListTable #trStatus').length; i++){
-			var tdSelectHostname = $('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(1)').text();
-			var tdSelectAllParamsFromLink = $('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(3) a').attr('href').split('&');
+			var tdSelectHostname = $('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(2)').text();
+			var tdSelectAllParamsFromLink = $('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(4) a').attr('href').split('&');
 			//var j = i - 1;
 			//if ($('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(1)').text() == $('.ListTable #trStatus:eq('+j+')').find('td:eq(1)').text())
 			//	{var tdSelectHostnameToShow = '';}
 			//	else {var tdSelectHostnameToShow = $('.ListTable #trStatus:eq('+i+')').find('td:eq(1)').text();}
-			if ($('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(1)').find('img').attr('src') == undefined)
+			if ($('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(2)').find('img').attr('src') == undefined)
 				{var tdSelectHostImgSrc = './modules/mobile-UI/include/img/spacer.gif';}
-				else {var tdSelectHostImgSrc = $('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(1)').find('img').attr('src');}
-			var tdSelectHostImgId = $('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(1)').find('a').attr('id');
-			var tdSelectHostStateImg = $('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(2)').html();
-			var tdSelectServicename = $('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(3)').text();
-			var tdSelectServiceStateImg = $('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(4)').html();
-			//var isAnyGraph = $('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(6)').prev('td').find('img').attr('src');
+				else {var tdSelectHostImgSrc = $('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(2)').find('img').attr('src');}
+			var tdSelectHostImgId = $('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(3)').find('a').attr('id');
+			var tdSelectHostStateImg = $('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(3)').html();
+			var tdSelectServicename = $('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(4)').text();
+			var tdSelectServiceStateImg = $('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(5)').html();
 			if ($('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(6)').prev('td').find('img').attr('src') == undefined)
 				{var isAnyGraph = 'n';}
 				else  {var isAnyGraph = 'y';}

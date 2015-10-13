@@ -1,0 +1,40 @@
+
+pour appeler un objet avec une classe existante:
+<?php
+			
+/*
+ * Create Object env
+ */
+$hostObj = new CentreonHost($pearDB);			
+			
+			
+echo $hostObj->getHostName("27");
+?>
+
+
+Dans index.php du répertoire install du module, ajouter en commentaire la version et un marqueur pour indiquer que c'est une version patchée:
+
+//index.php version 2.5
+
+//Patched version for Mobile-ui module
+
+recherche:
+main.php?p=20102&o=svc&host_search=gabarret&statusFilter=&select_instance=-1&hostgroups=0&o1=0&p=20102&l=50&o2=0&p=20102&l=50&cmd=42&o=h&limit=10
+
+dans les services, certains arguments nécessitent  "" pour considérer que l'argument est vide est donc afficher toutes les valeurs
+
+
+Récup des valeurs dasn $_SESSION:
+
+print_r ($_SESSION['centreon']->user->user_id);
+	--->centreon est un objet, user est un objet, user_id est une valeur dans l'objet
+	
+print_r ($_SESSION['centreon']->modules['mobile-UI']['name'];
+	--->centeron est un objet, modules est une valeur dans l'objet (ici un tableau),mobile-UI est un tableau dans le tableau modules, name est une valeur du tableau mobile-UI
+	
+	
+<?php 
+		echo '<pre>';
+		print_r ($_SESSION);
+		echo '</pre>';
+		?>

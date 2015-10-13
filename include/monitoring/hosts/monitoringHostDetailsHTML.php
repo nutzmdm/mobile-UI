@@ -195,6 +195,7 @@ HTML
 								<div data-role="popup" id="popupComment" class="ui-content div_popup" data-theme="a">
 								<div id="commentContener" class="display:none">
 									<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+										<br /><br/><br />
 										<form id="formSearch" class="ui-field-contain">
 												<input type="text" name="host_search" id="hostSearchInput" class="ui-state-disabled"value="<?php echo $_GET['host_name'];?>" data-mini="true"><br />
 												<label for="checkboxPersistent"><?php echo _("Persistent");?>
