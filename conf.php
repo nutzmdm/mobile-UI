@@ -19,7 +19,7 @@
 
 $module_conf['mobile-UI']["name"] = "mobile-UI";
 $module_conf['mobile-UI']["rname"] = "Mobile User Interface";
-$module_conf['mobile-UI']["mod_release"] = "2.5";
+$module_conf['mobile-UI']["mod_release"] = "2.2";
 $module_conf['mobile-UI']["infos"] = "UI for mobile devices";
 $module_conf['mobile-UI']["is_removeable"] = "1";
 $module_conf['mobile-UI']["author"] = "Nicolas MOREAU";

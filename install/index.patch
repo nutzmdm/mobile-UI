@@ -1,6 +1,6 @@
---- modules/mobile-UI/install/index.php.ori	2015-10-08 14:57:37.000000000 +0200
-+++ index.php	2015-10-13 11:53:37.000000000 +0200
-@@ -33,10 +33,32 @@
+--- /usr/share/centreon/www/modules/mobile-UI/install/index.php	2015-10-13 18:33:15.000000000 +0200
++++ /usr/share/centreon/www/index.php	2015-10-13 18:35:01.000000000 +0200
+@@ -33,6 +33,28 @@
   *
   */
  
@@ -29,17 +29,3 @@
  
  ini_set('display_errors', 'Off');
  
--$etc = "@CENTREON_ETC@";
-+$etc = "/etc/centreon";
- 
- clearstatcache(true, "$etc/centreon.conf.php");
- if (!file_exists("$etc/centreon.conf.php") && is_dir('./install')) {
-@@ -188,6 +210,6 @@
-     echo "<div class='msg'> PHP version is < 5.0. Please Upgrade PHP</div>";
- } else {
-     include_once("./login.php");
--}
-+		}
- 
- ?>
-\ Pas de fin de ligne à la fin du fichier.

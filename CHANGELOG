@@ -1,5 +1,0 @@
-v2.5:
--compatibilité avec centreon 2.6.x (versions gérant la criticité, en conséquence, le module n'est perte de la compatibilité avec les versions plus ancienens ne la gérant pas)
--nouvelle méthode d'installation
--minimisation de l'impact sur index.php
--préparation de l'intégration de themes

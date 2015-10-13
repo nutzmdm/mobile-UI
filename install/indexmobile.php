@@ -33,7 +33,6 @@
  *
  */
 
- //base: v2.6.4
 
 ini_set('display_errors', 'Off');
 
