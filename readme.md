@@ -1,0 +1,1 @@
+Compatibility with centreon < 2.5
