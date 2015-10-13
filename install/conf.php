@@ -1,0 +1,5 @@
+<?php
+
+$etc = "/etc/centreon";
+
+?>
