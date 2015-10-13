@@ -1,0 +1,220 @@
+/***********************
+General
+***********************/
+td	
+	{
+		white-space: normal;
+		word-wrap: break-word;
+	}
+
+div	
+	{
+		white-space: normal;
+		word-wrap: break-word;
+	}
+
+.tbl_def	/*Classe pour des tableaux en 100%*/
+	{
+	width:100%;
+	}
+.tbl-def	/*Classe pour des tableaux en 100%*/
+	{
+	width:100%;
+	}
+.div-align-center
+	{
+	text-align:center;
+	}
+.div-align-left
+	{
+	text-align:left;
+	}
+.div-align-right
+	{
+	text-align:right;
+	}
+.span-align-left
+	{
+	text-align:left;
+	}
+.span-align-right
+	{
+	text-align:right;
+	}
+.span-align-center
+	{
+	text-align:center;
+	}
+
+/************************
+Tableau récap
+************************/
+.tbl_recap
+	{
+	border:1px solid #fffff2; 
+	width:100%;
+	}
+.td_recap
+	{
+	border:1px solid #fffff2
+	}
+.td_recap_resultsAll
+	{
+	border:2px solid #fffff2; 
+	align:right;
+	}
+.td_recap_resultsUp
+	{
+	border:2px solid #19EE11; 
+	align:right;
+	}
+.td_recap_resultsDown
+	{
+	border:2px solid #F91E05; 
+	align:right;
+	}
+.td_recap_resultsCritical
+	{
+	border:2px solid #F91E05; 
+	align:right;
+	}
+.td_recap_resultsUnreachable
+	{
+	border:2px solid #82CFD8; 
+	align:right;
+	}
+.td_recap_resultsUnknown
+	{
+	border:2px solid #DCDADA; 
+	align:right;
+	}
+.td_recap_resultsPending
+	{
+	border:2px solid #2AD1D4; 
+	align:right;
+	}
+.td_recap_resultsWarning
+	{
+	border:2px solid #F8C706; 
+	align:right;
+	}
+
+/*************************************
+Statut des hotes et services
+*************************************/
+.tbl-host-status, .tbl-service-status
+	{
+	width: 100%;
+	}
+
+.td1-host-status, .td1-service-status
+	{
+	width:1px;
+	}
+.td2-host-status, .td2-service-status
+	{
+	width:99%;
+	}
+.td3-host-status, .td3-service-status
+	{
+	width:1px;
+	}
+
+/*************************************
+Détail des hotes et services
+*************************************/
+.tbl-detail
+	{
+	border:1px solid #fffff2; 
+	width:100%;
+	}
+.td-tbl-detail
+	{
+	border:1px solid #fffff2
+	}
+.td-statut-Ok
+	{
+	border:1px solid #19EE11; 
+	background-color:#19EE11;
+	}
+.td-statut-Up
+	{
+	border:1px solid #19EE11; 
+	background-color:#19EE11;
+	}
+.td-statut-warning
+	{
+	border:1px solid #F8C706; 
+	background-color:#F8C706;
+	}
+.td-statut-critical
+	{
+	border:1px solid #F91E05; 
+	background-color:#F91E05;
+	}
+.td-statut-down
+	{
+	border:1px solid #F91E05; 
+	background-color:#F91E05;
+	}
+.td-statut-unknown
+	{
+	border:1px solid #DCDADA; 
+	background-color:#DCDADA;
+	}
+.td-statut-unreachable
+	{
+	border:1px solid #82CFD8; 
+	background-color:#82CFD8;
+	}
+.td-statut-pending
+	{
+	border:1px solid #2AD1D4; 
+	background-color:#2AD1D4;
+	}
+.td-notif-ctrl-tbl-detail-non
+	{
+	border:1px solid red;
+	}
+.td-notif-ctrl-tbl-detail-oui
+	{
+	border:1px solid #19EE11;
+	}
+
+/*************************************
+Options
+*************************************/	
+.td-left-opts
+	{
+	width:65%;
+	text-align:middle;
+	}
+.td-right-opts
+	{
+	width:35%;
+	text-align:right;
+	}
+.div-align-left-opts
+	{
+	padding-left:10px;
+	text-align:middle;
+	}
+.div-align-right-opts
+	{
+	text-align:right;
+	}
+
+/*************************************
+Plugin Weathermap
+*************************************/
+.div_show_map
+	{
+	align:center;
+	border-width: 2px; 
+	border-style: solid; 
+	border-color: #000000;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	width:100%;
+	}
