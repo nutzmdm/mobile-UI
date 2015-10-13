@@ -1,0 +1,21 @@
+************************************
+*   Centreon UI for Smartphones  *
+************************************
+
+READ BEFORE CONTINUE :
+
+--> Keep sure that mobile-UI directory has 775 rights for centreon:centreon
+
+--> If you centreon's etc directory is not /etc/centreon you have to edit modules/mobile-UI/install/conf.php and replace default value by your custom value.
+
+During installation process, your index.php will be replaced.
+
+You could find a backup of this file in modules/mobile-UI/install -->index.centreonVersion.php.ori
+
+If you uninstall this module, this backup will be automatically restaured.
+
+Please be patient during installation, some files could be downloaded from github.
+
+Don't forget to check ACL (including "Configuration --> Mobile-UI")
+
+After upgrading your Centreon Version, go to "Configuration --> Mobile-UI" to patch your index.php
