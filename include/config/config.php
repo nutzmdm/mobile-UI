@@ -12,31 +12,37 @@ include $centreon_path.'/www/modules/mobile-UI/install/conf.php';
 if (isset ($_POST['patchIndexButton'])){
 
 	$rootIndex = $centreon_path."www/index.php";
-
+	$patchIndexDir = $centreon_path."www/modules/mobile-UI/install/index.patch";
+	
 	//downloading last versions
-	$downloadIndex = 'cd modules/mobile-UI/install/ && wget -t 2 -nc https://raw.githubusercontent.com/nutzmdm/Mobile-UI/master/install/index.'.$version.'.php';
-	$downloadGenericIndex = 'cd modules/mobile-UI/install/ && wget -t 2 -nc https://raw.githubusercontent.com/nutzmdm/Mobile-UI/master/install/index.generic.php';
+	//$downloadIndex = 'cd modules/mobile-UI/install/ && wget -t 2 -nc https://raw.githubusercontent.com/nutzmdm/Mobile-UI/master/install/index.'.$version.'.php';
+	//$downloadGenericIndex = 'cd modules/mobile-UI/install/ && wget -t 2 -nc https://raw.githubusercontent.com/nutzmdm/Mobile-UI/master/install/index.generic.php';
 
-	shell_exec($downloadIndex);
-	shell_exec($downloadGenericIndex);
+	//shell_exec($downloadIndex);
+	//shell_exec($downloadGenericIndex);
 
-	if (file_exists ($centreon_path.'www/modules/mobile-UI/install/index.'.$version.'.php')){
-		$modIndex = $centreon_path.'www/modules/mobile-UI/install/index.'.$version.'.php';}
-	else {$modIndex = $centreon_path.'www/modules/mobile-UI/install/index.generic.php';}
+	//if (file_exists ($centreon_path.'www/modules/mobile-UI/install/index.'.$version.'.php')){
+		//$modIndex = $centreon_path.'www/modules/mobile-UI/install/index.'.$version.'.php';}
+	//else {$modIndex = $centreon_path.'www/modules/mobile-UI/install/index.generic.php';}
 
+	$rmOldBackup = 'rm '.$centreon_path.'www/modules/mobile-UI/install/*.ori';
 	$cpOriginalIndex = 'cp '.$rootIndex.' '.$centreon_path.'www/modules/mobile-UI/install/index.'.$version.'.php.ori';
-	$cpNewIndex = 'cp '.$modIndex.' '.$rootIndex.'';
+	//$cpNewIndex = 'cp '.$modIndex.' '.$rootIndex.'';
 	$chmodOldIndex = 'chmod 775 '.$centreon_path.'www/modules/mobile-UI/install/index.'.$version.'.php.ori';
+	$patchIndex = 'patch '.$rootIndex.' < '.$patchIndexDir;
+	$chmodIndex = 'chmod 775 '.$centreon_path.'www/index.php';
 
+	shell_exec($rmOldBackup);
 	shell_exec($cpOriginalIndex);
-	shell_exec($cpNewIndex);
 	shell_exec($chmodOldIndex);
+	shell_exec($patchIndex);
+	shell_exec($chmodIndex);}
 
-	$confIndex = str_replace('@CENTREON_ETC@', $etc, file_get_contents($rootIndex)); 
-	file_put_contents($rootIndex, $confIndex);}
+	//$confIndex = str_replace('@CENTREON_ETC@', $etc, file_get_contents($rootIndex)); 
+	//file_put_contents($rootIndex, $confIndex);}
 
 $openRootIndex = file_get_contents(''.$centreon_path.'/www/index.php');
-$verifVersion = strpos($openRootIndex, 'Patched version for Mobile-ui module');
+$verifVersion = strpos($openRootIndex, 'HTTP_USER_AGENT');
 
 if ($verifVersion === false){
 	echo '<br /><br /><br />';
