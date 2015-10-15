@@ -15,6 +15,9 @@ $originalIndex = $centreon_path.'www/modules/mobile-UI/install/index.'.$version.
 
 $restoreOriginalIndex = 'cp '.$originalIndex.' '.$rootIndex.'';
 
+$deleteIndexMobile = 'rm '.$centreon_path.'www/indexmobile.php';
+
 shell_exec($restoreOriginalIndex);
+shell_exec($deleteIndexMobile);
 
 ?>

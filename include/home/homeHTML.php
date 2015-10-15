@@ -3,6 +3,7 @@ HTML
 ------------------------------------------------------------------------------------------------------------------>
 
 <?php include ("./modules/mobile-UI/include/common/htmlHeader.php");?>
+<?php //include("./modules/mobile-UI/include/common/htmlIncludeJsTheme.php");?>
 
 <script src="./modules/mobile-UI/include/js/charts/highcharts.js"></script>
 <script src="./modules/mobile-UI/include/js/charts/exporting.js"></script>
@@ -17,7 +18,7 @@ HTML
 
 <!-- header -->
 
-<div data-role="header" data-theme="a">
+<div data-role="header">
 	<h3 style="font-size:15px">Centreon</h3>
 		<a href="#menuPanel" class="ui-btn ui-icon-bullets ui-btn-icon-notext ui-corner-all" data-role="button" role="button"></a>
 </div>
@@ -107,4 +108,3 @@ HTML
 	</div>
 </div>
 
-</div>
