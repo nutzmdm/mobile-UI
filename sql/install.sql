@@ -5,6 +5,7 @@ CREATE TABLE IF NOT EXISTS `mod_mui_opt` (
   `user_id` int(11) NOT NULL,
   `limit_display` int(11) NOT NULL DEFAULT '10',
   `script_execution_tempo` int(11) NOT NULL DEFAULT '1000',
+  `theme` TINYINT(10) NOT NULL DEFAULT '1',
   UNIQUE KEY `user_id` (`user_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 

@@ -119,10 +119,12 @@ $(document).on('pageinit', function() {
 		//Getting page elements	-->
 		var i = 0;
 		for (i=0; i < $('.ListTable #trStatus').length; i++){
-			var tdSelectHostname = $('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(1)').text();
-			var tdSelectHostImgSrc = $('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(1)').find('img').attr('src');
-			var tdSelectHostImgId = $('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(1)').find('a').attr('id');
-			var tdSelectHostStateImg = $('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(2)').html();
+			var tdSelectHostname = $('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(2)').text();
+			if ($('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(2)').find('img').attr('src') == undefined)
+				{var tdSelectHostImgSrc = './modules/mobile-UI/include/img/spacer.gif';}
+				else {var tdSelectHostImgSrc = $('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(2)').find('img').attr('src');}
+			var tdSelectHostImgId = $('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(2)').find('a').attr('id');
+			var tdSelectHostStateImg = $('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(3)').html();
 			//append elements of this loop-->
 			$("#showHost").append(
 									'<li>'+

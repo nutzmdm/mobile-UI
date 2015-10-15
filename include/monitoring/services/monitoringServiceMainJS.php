@@ -85,10 +85,6 @@ $(document).on('pageinit', function() {
 		for (i=0; i < $('.ListTable #trStatus').length; i++){
 			var tdSelectHostname = $('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(2)').text();
 			var tdSelectAllParamsFromLink = $('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(4) a').attr('href').split('&');
-			//var j = i - 1;
-			//if ($('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(1)').text() == $('.ListTable #trStatus:eq('+j+')').find('td:eq(1)').text())
-			//	{var tdSelectHostnameToShow = '';}
-			//	else {var tdSelectHostnameToShow = $('.ListTable #trStatus:eq('+i+')').find('td:eq(1)').text();}
 			if ($('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(2)').find('img').attr('src') == undefined)
 				{var tdSelectHostImgSrc = './modules/mobile-UI/include/img/spacer.gif';}
 				else {var tdSelectHostImgSrc = $('.ListTable #trStatus:eq(' +i+ ')').find('td:eq(2)').find('img').attr('src');}

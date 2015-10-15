@@ -8,7 +8,7 @@ function getUserOptions() {
 	if(isset($checkOptionsExistForUser) && $checkOptionsExistForUser['exist'] == 0)
 		{
 		// create entry if there is no options defined for current user
-		$queryCreateOptions = "INSERT INTO `mod_mui_opt` (`user_id`,`limit_display`,`script_execution_tempo`) VALUES ('".$centreon->user->user_id."', '10', '2')";
+		$queryCreateOptions = "INSERT INTO `mod_mui_opt` (`user_id`,`limit_display`,`script_execution_tempo`,`theme`) VALUES ('".$centreon->user->user_id."', '10', '2', '1')";
 		$pearDB->query($queryCreateOptions);
 		}
 	$querySelectUserOptions = "SELECT * FROM `mod_mui_opt` WHERE `user_id` = '".$centreon->user->user_id."'";
@@ -17,9 +17,9 @@ function getUserOptions() {
 	return $userOptions;
 	}
 
-function updateOptions($tempoScripts, $pageLimit) {
+function updateOptions($tempoScripts, $pageLimit, $theme) {
 	global $pearDB, $centreon;
-	$rq1 = "UPDATE  `mod_mui_opt` SET  `limit_display` =  '".$pageLimit."', `script_execution_tempo` =  '".$tempoScripts."' WHERE  `mod_mui_opt`.`user_id` ='".$centreon->user->user_id."'";
+	$rq1 = "UPDATE  `mod_mui_opt` SET  `limit_display` =  '".$pageLimit."', `script_execution_tempo` =  '".$tempoScripts."', `theme` = '".$theme."' WHERE  `mod_mui_opt`.`user_id` ='".$centreon->user->user_id."'";
 	$updateOptions =& $pearDB->query($rq1);
 	return true;
 	}

@@ -19,7 +19,7 @@ $cpOriginalIndex = 'cp '.$rootIndex.' '.$centreon_path.'www/modules/mobile-UI/in
 $cpMobileIndex = 'cp '.$modIndex.' '.$centreon_path.'www/';
 $chmodOldIndex = 'chmod 775 '.$centreon_path.'www/modules/mobile-UI/install/index.'.$version.'.php.ori';
 $chmodMobileIndex = 'chmod 775 '.$centreon_path.'www/indexmobile.php';
-$patchIndex = 'patch '.$rootIndex.' < '$patchIndex;
+$patchIndex = 'patch '.$rootIndex.' < '.$patchIndex;
 $chmodIndex = 'chmod 775 '.$centreon_path.'www/index.php';
 
 shell_exec($cpOriginalIndex);

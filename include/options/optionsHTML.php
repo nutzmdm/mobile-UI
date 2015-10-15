@@ -31,7 +31,7 @@ HTML
 	</table>
 
 	<br />
-	Version 2.1
+	Version 2.5
 	<br />
 	<br />
 	
@@ -51,6 +51,11 @@ HTML
 		<br /><br /><br />
 		<fieldset>
 		<legend><h2>Display options :</h2><br /></legend>
+			<label for="theme"><h5>Theme</h5></label>
+			<select name="theme" id="theme" data-native-menu="false" disabled="disabled">
+        		<option value="1">Default</option>
+        		<option value="2">Material design</option>
+    		</select>
 			<label for="pageLimit"><h5>Page limit
 										<a href="#popupInfoPageLimit" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Learn more">Learn more</a></p>
 												<div data-role="popup" id="popupInfoPageLimit" class="ui-content" data-theme="a" style="max-width:350px;">
