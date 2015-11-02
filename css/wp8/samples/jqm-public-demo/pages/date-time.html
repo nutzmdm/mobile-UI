@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=utf-8"/>
+    <title>DateTime Picker</title>
+</head>
+<body>
+
+<div data-role="page" class="type-interior" data-theme="a">
+    <div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false">
+        <span class="ui-app-title">Be inspired by WP8</span>
+
+        <h1>DateTime Picker</h1>
+    </div>
+
+    <div data-role="content" data-theme="a">
+        <form id="testform">
+
+            <div class="datetime-picker" data-role="fieldcontain">
+                <label for="date1">Date</label>
+                <input type="text" name="date1" id="date1"  readonly="1"/>
+                <a href="#" data-role="button" data-inline="true" id="dateResetBtn">reset</a>
+            </div>
+
+            <div class="datetime-picker" data-role="fieldcontain">
+                <label for="date2">Time</label>
+                <input type="text" name="date2" id="date2" readonly="1"/>
+                <a href="#" data-role="button" data-inline="true" id="timeResetBtn">reset</a>
+            </div>
+
+            The jQM theme for Windows Phone exposes the native Windows Phone DateTime pickers using an Apache Cordova plugin. These controls are only viewable from an Apache Cordova App on Windows Phone. Additional details are available
+            <a href="http://sgrebnov.github.com/jqmobile-wp8-theme/" rel="external">here</a>.
+        </form>
+
+        <script type="text/javascript">
+            $("#dateResetBtn").bind('click', function(event){
+                $("#date1").val('');
+            });
+
+            $("#timeResetBtn").bind('click', function(event){
+                $("#date2").val('');
+            });
+
+            $(document).ready(function () {
+                // cordova environment
+                if(navigator.plugins && typeof navigator.plugins.dateTimePicker !== "undefined"){
+                    // Date with external button
+                    $('#date1').scroller({ mode: 'clickpick' });
+                    // Time
+                    $('#date2').scroller({ preset: 'time',mode: 'clickpick' });
+                } else {
+                    $('.datetime-picker').hide();
+
+                }
+            });
+        </script>
+
+
+    </div>
+</div>
+</body>
+</html>

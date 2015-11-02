@@ -1,0 +1,26 @@
+améliorer la procédure d'install en embarquant un maximum de version du fichier index pour éviter de remplacer l'existant par un qui ne soit pas tres à jour
+	--> installer une version qui soit celle de centreon, à défaut celui de la sous version la plus proche
+	--> idem en cas d'une MAJ de centreon lorsque l'on passe par l'administration du module pour patcher son index
+
+dans hotes:
+	vérifier le fonctionnement de "submit result" et refaire la page (sous forme de popup)
+	refaire la page "planifier un arret" (sous forme de popup)
+	refaire la page "ajouter un commentaire" (sous forme de popup)
+	ajouter les raccourcis vers: 
+								"view status of all services" "vew logs" "view report" (refaire le graph en svg apres avoir récupéré les données du tableau) "view graphs"
+	voir s'il est possible de refaire les popups de ping et traceroute
+	mettre un petit N/A dans l'onglet de commentaires quand il n'y a pas de commentaires
+	
+dans services
+	refaire la page "acquittés" (et peut etre en profiter pour le mettre au singulier dans l'outil de trad^^)
+	refaire la page "submit result"(sous forme de popup)
+	refaire la page "planifier un arret (sous forme de popup)
+	refaire la page "ajouter un commentaire" (sous forme de popup)
+	mettre un petit N/A dans le tableau de données de performances quand il est vide
+	mettre un truc pour dire qu'il n'y a pas de graphe dispo pour le service quand c'est le cas
+	ajouter les raccourcis vers: 
+								"statut de l'hote" "vew logs for host" "view report for host" (refaire le graph en svg apres avoir récupéré les données du tableau) "view graphs"
+								"view of all services on host" "view logs for service" "view report for service"
+								
+Ajouter une visu du module syslog quand il est présent sur le serveur
+afficher les cartes nagvis si le module est présent sur le serveur (et voir pour filtrer automatiquement par nom avec un regexp pour n'afficher que celles dans un format adapté)
