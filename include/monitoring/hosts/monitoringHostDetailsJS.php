@@ -164,7 +164,7 @@ $(document).on('pageinit', function() {
 		var table3Tr7Td1 = $('.ListTable:eq(4) tr:eq(7) td:eq(0)').html();
 		var table3Tr8Td1 = $('.ListTable:eq(4) tr:eq(8) td:eq(0)').html();
 		var table3Tr9Td1 = $('.ListTable:eq(4) tr:eq(9) td:eq(0)').html();
-		alert(table3Tr0Td1);
+
 	//Table perf data (from ListTable:eq(1)) - Tab4
 		var table4Tr0Td0 = $('.ListTable:eq(1) tr:eq(3) td:eq(0)').text();
 		var table4Tr0Td1 = $('.ListTable:eq(1) tr:eq(3) td:eq(1)').text();	
