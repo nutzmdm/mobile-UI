@@ -146,12 +146,12 @@ $(document).on('pageinit', function() {
 			$('.ListTable:eq(2) tr:eq(5) td:eq(2) img').removeAttr('alt onmouseover onmouseout');
 		var table2Tr5Td3 = $('.ListTable:eq(2) tr:eq(5) td:eq(2)').html();
 		var table2Tr6Td1 = $('.ListTable:eq(2) tr:eq(6) td:eq(0)').html();
-		var table2Tr6Td2 = $('.ListTable:eq(2) tr:eq(6) td:eq(1) font').text();
+		/*var table2Tr6Td2 = $('.ListTable:eq(2) tr:eq(6) td:eq(1) font').text();
 			var table2Tr6Td2Color = $('.ListTable:eq(2) tr:eq(6) td:eq(1) font').css('background-color');
 			if (table2Tr6Td2Color =='rgb(0, 255, 0)') {var table2Tr6Td2Style = 'background:#C3EFB3';} //green
 			else if (table2Tr6Td2Color == 'rgb(255, 0, 0)') {var table2Tr6Td2Style = 'background:#F2DEDF';} //red
 			$('.ListTable:eq(2) tr:eq(6) td:eq(2) img').removeAttr('alt onmouseover onmouseout');
-		var table2Tr6Td3 = $('.ListTable:eq(2) tr:eq(6) td:eq(2)').html();
+		var table2Tr6Td3 = $('.ListTable:eq(2) tr:eq(6) td:eq(2)').html();*/
 	
 	//Table commands (ListTable:eq(4)) - Tab3
 		var table3Tr0Td1 = $('.ListTable:eq(4) tr:eq(0) td:eq(0)').html();
@@ -164,7 +164,7 @@ $(document).on('pageinit', function() {
 		var table3Tr7Td1 = $('.ListTable:eq(4) tr:eq(7) td:eq(0)').html();
 		var table3Tr8Td1 = $('.ListTable:eq(4) tr:eq(8) td:eq(0)').html();
 		var table3Tr9Td1 = $('.ListTable:eq(4) tr:eq(9) td:eq(0)').html();
-		
+		alert(table3Tr0Td1);
 	//Table perf data (from ListTable:eq(1)) - Tab4
 		var table4Tr0Td0 = $('.ListTable:eq(1) tr:eq(3) td:eq(0)').text();
 		var table4Tr0Td1 = $('.ListTable:eq(1) tr:eq(3) td:eq(1)').text();	
@@ -264,9 +264,9 @@ $(document).on('pageinit', function() {
 			$('#table2Tr5Td2').attr('style', table2Tr5Td2Style);
 		$('#table2Tr5Td3').append(table2Tr5Td3);
 		$('#table2Tr6Td1').append(table2Tr6Td1);
-		$('#table2Tr6Td2').append(table2Tr6Td2);
+		/*$('#table2Tr6Td2').append(table2Tr6Td2);
 			$('#table2Tr6Td2').attr('style', table2Tr6Td2Style);
-		$('#table2Tr6Td3').append(table2Tr6Td3);
+		$('#table2Tr6Td3').append(table2Tr6Td3);*/
 		
 	//Tab3	
 		//Table commands - Tab3
