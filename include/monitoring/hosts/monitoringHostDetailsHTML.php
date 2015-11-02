@@ -173,11 +173,11 @@ HTML
 					<td id="table2Tr5Td2" class="tdDetails tdCenter"></td>
 					<td id="table2Tr5Td3" class="tdDetails tdCenter"></td>
 				</tr>
-				<tr class="trImpair">
+				<!--<tr class="trImpair">
 					<td id="table2Tr6Td1" class="tdDetails"></td>
 					<td id="table2Tr6Td2" class="tdDetails tdCenter"></td>
 					<td id="table2Tr6Td3" class="tdDetails tdCenter"></td>
-				</tr>
+				</tr>-->
 			</tbody>
 		</table>		
 	</div>

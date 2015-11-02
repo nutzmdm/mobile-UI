@@ -55,18 +55,40 @@ $(document).on('pageinit', function() {
 		var hostTitle = $('table#Tcontener tr:eq(0) td#Tmainpage div:eq(0) table.ListTable tbody tr.ListHeader td.ListColHeaderLeft').html();
 		var tblDetails = '.ListTable:eq(1)';
 		
-		var isAnyGraphValue = '<?php echo $_GET['g'];?>';
+		var firstGraphURL = $('.ListTable:eq(2) tr:eq(1) td:eq(0)').html();
+		var secondGraphURL = $('.ListTable:eq(3) tr:eq(1) td:eq(0)').html();
+		
+		var firstGraphURLvalueForStatus = firstGraphURL.indexOf('displayServiceStatus.php');		// Avec ces lignes on cherche si des graphiques existent, histoire de faciliter les choses, le graphe
+		var firstGraphURLvalueForDetails = firstGraphURL.indexOf('generateImage.php');				//des status apparait en deuxieme s'il y'a un graphe de détails, sinon il est en premier
+		var secondGraphURLvalueForStatus = secondGraphURL.indexOf('displayServiceStatus.php');		//
+		var secondGraphURLvalueForDetails = secondGraphURL.indexOf('generateImage.php');			//
+		
+		var firstGraphExist = 'no';
+		var secondGraphExist ='no';
+		
+		if ((firstGraphURLvalueForStatus != '-1') || (firstGraphURLvalueForDetails != '-1')){
+			var firstGraphExist = 'yes';
+			if ((secondGraphURLvalueForStatus != '-1') || (secondGraphURLvalueForDetails != '-1')){
+			var secondGraphExist = 'yes';}}
 
-		if (isAnyGraphValue == 'y'){	
+		if ((firstGraphExist == 'yes') && (secondGraphExist == 'yes')) {
 				var tblOptions = '.ListTable:eq(6)';
 				var tblCommands = '.ListTable:eq(5)';
 				var tblLinks = '.ListTable:eq(7)';
 				var tblNotifications = '.ListTable:eq(8)';
-				var tblGraphsDetails = '.ListTable:eq(2)';
-				var tblGraphsStatus = '.ListTable:eq(3)';
+				var tblFirstGraph = '.ListTable:eq(2)';
+				var tblSecondGraph = '.ListTable:eq(3)';
 				var tblTitreComments = '.ListTable:eq(9)';
 				var tblComments = '.ListTable:eq(10)';}
-		else {	var tblOptions = '.ListTable:eq(4)';
+		else if ((firstGraphExist == 'yes') && (secondGraphExist == 'no')){
+				var tblOptions = '.ListTable:eq(5)';
+				var tblCommands = '.ListTable:eq(4)';
+				var tblLinks = '.ListTable:eq(6)';
+				var tblNotifications = '.ListTable:eq(7)';
+				var tblFirstGraph = '.ListTable:eq(2)';
+				var tblTitreComments = '.ListTable:eq(8)';
+				var tblComments = '.ListTable:eq(9)';}
+		else{	var tblOptions = '.ListTable:eq(4)';
 				var tblCommands = '.ListTable:eq(3)';
 				var tblLinks = '.ListTable:eq(5)';
 				var tblNotifications = '.ListTable:eq(6)';
@@ -126,7 +148,7 @@ $(document).on('pageinit', function() {
 		var table1Tr19Td1 = $(''+tblDetails+' tr:eq(19) td:eq(0)').text();
 		var table1Tr19Td2 = $(''+tblDetails+' tr:eq(19) td:eq(1)').text();
 		
-	//Table service options (ListTable:eq(4))- Tab2
+	//Table service options (ListTable:eq(4))--> Tab2
 		var table2Tr0Td0 = $(''+tblOptions+' tr:eq(0) td:eq(0)').html();
 		var table2Tr1Td1 = $(''+tblOptions+' tr:eq(1) td:eq(0)').html();
 		var table2Tr1Td2 = $(''+tblOptions+' tr:eq(1) td:eq(1) font').text();
@@ -171,12 +193,12 @@ $(document).on('pageinit', function() {
 			$(''+tblOptions+' tr:eq(6) td:eq(2) img').removeAttr('alt onmouseover onmouseout');
 		var table2Tr6Td3 = $(''+tblOptions+' tr:eq(6) td:eq(2)').html();
 		var table2Tr7Td1 = $(''+tblOptions+' tr:eq(7) td:eq(0)').html();
-		/* var table2Tr7Td2 = $(''+tblOptions+' tr:eq(7) td:eq(1) font').text();
+		var table2Tr7Td2 = $(''+tblOptions+' tr:eq(7) td:eq(1) font').text();
 			var table2Tr7Td2Color = $(''+tblOptions+' tr:eq(7) td:eq(1) font').css('background-color');
 			if (table2Tr7Td2Color =='rgb(0, 255, 0)') {var table2Tr7Td2Style = 'background:#C3EFB3';} //green
 			else if (table2Tr7Td2Color == 'rgb(255, 0, 0)') {var table2Tr7Td2Style = 'background:#F2DEDF';} //red
 			$(''+tblOptions+' tr:eq(7) td:eq(2) img').removeAttr('alt onmouseover onmouseout');
-		var table2Tr7Td3 = $(''+tblOptions+' tr:eq(7) td:eq(2)').html(); */
+		var table2Tr7Td3 = $(''+tblOptions+' tr:eq(7) td:eq(2)').html();
 		
 	
 	//Table commands (ListTable:eq(4)) - Tab2
@@ -204,11 +226,11 @@ $(document).on('pageinit', function() {
 		var table6Tr2Td0 = $(''+tblNotifications+' tr:eq(2) td:eq(0)').html();
 		
 	//Table graph details - Tab5
-		var table7Tr0Td0 = $(''+tblGraphsDetails+' tr:eq(0) td:eq(0)').html();
-		var table7Tr1Td0 = $(''+tblGraphsDetails+' tr:eq(1) td:eq(0)').html();
+		var table7Tr0Td0 = $(''+tblFirstGraph+' tr:eq(0) td:eq(0)').html();
+		var table7Tr1Td0 = $(''+tblFirstGraph+' tr:eq(1) td:eq(0)').html();
 	//Table graph status - Tab5
-		var table8Tr0Td0 = $(''+tblGraphsStatus+' tr:eq(0) td:eq(0)').html();
-		var table8Tr1Td0 = $(''+tblGraphsStatus+' tr:eq(1) td:eq(0)').html();
+		var table8Tr0Td0 = $(''+tblSecondGraph+' tr:eq(0) td:eq(0)').html();
+		var table8Tr1Td0 = $(''+tblSecondGraph+' tr:eq(1) td:eq(0)').html();
 	
 	//Table comments (ListTable:eq(7&8)) - Tab6
 		var table9Tr0Td0 = $(''+tblTitreComments+' tr:eq(0) td:eq(0)').html();
@@ -296,10 +318,10 @@ $(document).on('pageinit', function() {
 		$('#table2Tr6Td2').append(table2Tr6Td2);
 			$('#table2Tr6Td2').attr('style', table2Tr6Td2Style);
 		$('#table2Tr6Td3').append(table2Tr6Td3);
-		/* $('#table2Tr7Td1').append(table2Tr7Td1);
+		$('#table2Tr7Td1').append(table2Tr7Td1);
 		$('#table2Tr7Td2').append(table2Tr7Td2);
 			$('#table2Tr7Td2').attr('style', table2Tr7Td2Style);
-		$('#table2Tr7Td3').append(table2Tr7Td3) ;*/
+		$('#table2Tr7Td3').append(table2Tr7Td3);
 		
 	//Tab3	
 		//Table commands - Tab3
@@ -308,7 +330,7 @@ $(document).on('pageinit', function() {
 		$('#table3Tr2Td1').append(table3Tr2Td1);
 		$('#table3Tr3Td1').append(table3Tr3Td1);
 		$('#table3Tr4Td1').append(table3Tr4Td1);
-		$('#table3Tr5Td1').append(table3Tr5Td1);
+		//$('#table3Tr5Td1').append(table3Tr5Td1);
 		
 	//Tab4
 		//Table perf data - Tab4
@@ -343,6 +365,7 @@ $(document).on('pageinit', function() {
 		$('#table9Tr1Td2').append(table9Tr1Td2);
 		$('#table9Tr1Td3').append(table9Tr1Td3);
 		$('#table9Tr1Td4').append(table9Tr1Td4);
+		$('#table9Tr1Td5').append(table9Tr1Td5);
 			for (var i=1; i < $(''+tblComments+' tr').length; i++){
 			var table9TrCommentsTd0 = $(''+tblComments+' tr:eq(' +i+ ')').find('td:eq(0)').html();
 			var table9TrCommentsTd1 = $(''+tblComments+' tr:eq(' +i+ ')').find('td:eq(1)').html();
@@ -350,7 +373,7 @@ $(document).on('pageinit', function() {
 			var table9TrCommentsTd3 = $(''+tblComments+' tr:eq(' +i+ ')').find('td:eq(3)').html();
 			var table9TrCommentsTd4 = $(''+tblComments+' tr:eq(' +i+ ')').find('td:eq(4)').html();
 			var table9TrCommentsTd5 = $(''+tblComments+' tr:eq(' +i+ ')').find('td:eq(5)').html();
-			$('#table7HostDetails').append('<tr>'+
+			$('#table9HostDetails').append('<tr>'+
 										'<td id="table9TrCommentsTd0" class="tdDetails">'+table9TrCommentsTd0+'</td>'+
 										'<td id="table9TrCommentsTd1" class="tdDetails">'+table9TrCommentsTd1+'</td>'+
 										'<td id="table9TrCommentsTd2" class="tdDetails">'+table9TrCommentsTd2+'</td>'+
